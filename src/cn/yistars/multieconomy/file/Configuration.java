@@ -2,10 +2,7 @@ package cn.yistars.multieconomy.file;
 
 import cn.yistars.multieconomy.MultiEconomy;
 
-import org.bukkit.Material;
 import org.bukkit.configuration.file.FileConfiguration;
-
-import java.util.Arrays;
 
 public class Configuration {
     private MultiEconomy plugin;
@@ -21,14 +18,23 @@ public class Configuration {
         config.options().header(plugin.getDescription().getName()
                 + "\n"
                 + "Version: " + plugin.getDescription().getVersion()
-                + "\nGemsEconomy Main Configuration file."
+                + "\nMultiEconomy Main Configuration file."
                 + "\n"
-                + "Developer(s): " + plugin.getDescription().getAuthors()
-                + "\n\n"
-                + "You have three valid storage methods, yaml, mysql or sqlite. If you choose mysql you would have to enter the database credentials down below."
-                + "\n"
-                + "All messages below are configurable, I hope you use them because it took 1 hour to make all of them into the plugin and configurable.");
+                + "Developer: " + plugin.getDescription().getAuthors()
+                + "\n");
 
-        String path = "Messages.";
+        config.addDefault("server", "none");
+
+        config.addDefault("mysql.database", "minecraft");
+        config.addDefault("mysql.tableprefix", "gemseconomy");
+        config.addDefault("mysql.host", "localhost");
+        config.addDefault("mysql.port", 3306);
+        config.addDefault("mysql.username", "root");
+        config.addDefault("mysql.password", "password");
+
+        
+        config.options().copyDefaults(true);
+        plugin.saveConfig();
+        plugin.reloadConfig();
     }
 }
