@@ -3,3 +3,21 @@ main: cn.yistars.multieconomy.MultiEconomy
 version: 1.0
 author: Bing_Yanchi
 description: A multi-currency economy plugin for spigot servers
+depend: [Vault]
+commands:
+    balance:
+      description: Shows your balances
+      usage: /balance (account)
+      aliases: [money, mmoney]
+    currency:
+      description: Manage the currencies.
+      usage: /currency
+      aliases: [mcurrency]
+    economy:
+      description: Give, set or take currency.
+      usage: /eco <set|take|give> <account> <amount> (currency)
+      aliases: [eco, meco]
+    pay:
+      description: Pays another account
+      usage: /pay <account> <amount> (currency)
+      aliases: [mpay]

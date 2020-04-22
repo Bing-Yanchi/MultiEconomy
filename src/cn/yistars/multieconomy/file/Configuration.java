@@ -30,5 +30,5 @@ public class Configuration {
                 + "All messages below are configurable, I hope you use them because it took 1 hour to make all of them into the plugin and configurable.");
 
         String path = "Messages.";
-
+    }
 }
