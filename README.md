@@ -3,10 +3,6 @@
 
 插件开发主要功能：
 
-Vault Api
+Vault Api, MySQL 数据储存, 多种货币储存, 货币间汇率转换
 
-MySQL 数据储存
-
-多种货币储存
-
-货币间汇率转换
+Localization project: https://crowdin.com/project/multieconomy
