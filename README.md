@@ -1,5 +1,6 @@
 # MultiEconomy
 [![Crowdin](https://badges.crowdin.net/multieconomy/localized.svg)](https://crowdin.com/project/multieconomy)
+
 适用于 Minecraft Spigot/Bukkit 的多种货币经济插件，支持 MySQL 跨服货币
 
 插件开发主要功能：
