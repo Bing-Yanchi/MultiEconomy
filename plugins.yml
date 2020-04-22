@@ -1,0 +1,5 @@
+name: MultiEconomy
+main: cn.yistars.multieconomy.MultiEconomy
+version: 1.0
+author: Bing_Yanchi
+description: A multi-currency economy plugin for spigot servers
